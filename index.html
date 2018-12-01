@@ -6,31 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ALLPS</title>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-    <style type="text/css">
-        html,
-        body {
-            font-family: 'Open Sans';
-        }
-        img {
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,600" rel="stylesheet">
 </head>
 
 <body>
-<section class="hero is-fullheight is-default is-bold">
     <div class="hero-head">
-        <nav class="navbar">
+        <nav class="navbar is-fixed-top">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="/">
-                        <img src="/images/red.png" alt="Logo">
+                    <a class="navbarItem" href="/">
+                        <img src="images/red.png" alt="Logo">
                     </a>
+                    <span class="is-danger brand">&nbsp;ALLPS</span>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
                         <span></span>
@@ -39,21 +30,17 @@
                 </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                        <div class="tabs is-right">
-                            <ul>
-                                <li class="is-active"><a>Home</a></li>
-                                <li><a href="">Examples</a></li>
-                                <li><a href="">Features</a></li>
-                                <li><a href="">Team</a></li>
-                                <li><a href="">Help</a></li>
-                            </ul>
-                        </div>
+                        <a class="navbar-item is-active" href="#index">Home</a>
+                        <a class="navbar-item" href="#product">Product</a>
+                        <a class="navbar-item" href="#contact">Contact</a>
+                        <a class="navbar-item" href="#about">About us</a>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="hero-body">
+    <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-body">
         <div class="container has-text-centered">
             <div class="columns is-vcentered">
                 <div class="column is-5">
@@ -62,34 +49,57 @@
                     </figure>
                 </div>
                 <div class="column is-6 is-offset-1">
-                    <h1 class="title is-2">
-                        Superhero Scaffolding
+                    <h1 class="subtitle is-1 is-size-2-mobile is-dark">
+                        Welcome to ALLPS!
                     </h1>
-                    <h2 class="subtitle is-4">
-                        Let this cover page describe a product or service.
+                    <h2 class="subtitle is-size-4-mobile is-3 is-dark">
+                        We are a Swiss based startup<br>we make <span class="is-red is-uppercase"><b>IT</b></span> happen
                     </h2>
                     <br>
                     <p class="has-text-centered">
-                        <a class="button is-medium is-info is-outlined">
-                            Learn more
+                        <a href="#product" class="button myBtn">
+                            See what we build
                         </a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    </section>
 
-    <div class="hero-foot">
-        <div class="container">
-            <div class="tabs is-centered">
-                <ul>
-                    <li><a>And this is the bottom</a></li>
-                </ul>
+    <section id="product" class="hero has-background-blue">
+        <div class="hero-body">
+            <p class="has-text-centered subtitle is-2" style="color:#fff">Products</p>
+            <div class="columns">
+                <div class="column is-4 is-offset-2">
+                    <p class="has-text-centered title" style="color:#fff">iPropal</p>
+                    <ul class="features">
+                        <li class="mt1">Hire verified IT freelancers online</li>
+                        <li class="mt1">Post job free of cost and checkout smart matched freelancers instantly.</li>
+                        <li class="mt1">Pay only when satisfied with work.</li>
+                        <li class="mt1">Manage work contracts and payments online.</li>
+                        <li class="mt1">Cost effective and time saving way to execute IT projects.</li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <p class="has-text-centered subtitle">iPropal Enterprise</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<script src="../js/bulma.js"></script>
+    </section>
+
+    <section class="hero">
+        <div class="hero-foot">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li><a>This is the footer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 
 </html>

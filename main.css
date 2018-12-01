@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    font-family: 'Asap';
+}
+img {
+    height: 35px;
+}
+ul {
+    border-bottom: 0px !important;
+}
+.is-red {
+    color: #d90023 !important;
+}
+.myBtn, .myBtn:hover {
+    color: #d90023 !important;
+    border-color: #d90023;
+}
+.has-background-gray {
+    background-color: #ebebeb;
+}
+.has-background-blue {
+    background-color: #0098db;
+}
+.navbar {
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),
+    inset 0 -1px 0 0 #dadce0;
+}
+.burger span{
+    border: 1px solid #d90023;
+}
+.navbar-item {
+    padding: 0px;
+    margin: 0px;
+}
+.navbar-item:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #d90023;
+}
+.navbar-menu .navbar-end a{
+    width: 100px;
+    justify-content: center;
+}
+.is-active {
+    color: #d90023;
+    border-bottom: 2px solid #d90023;
+}
+.navbarItem {
+    margin: auto 5px;
+}
+.asap {
+    font-family: "Asap";
+}
+.brand {
+    margin: auto;
+    font-weight: 600;
+    font-size: 35px;
+    color: #d90023;
+}
+.features {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+@media only screen and (max-width: 1086px) {
+    .brand {
+        margin: 0px;
+    }
+    .is-active {
+        border-bottom: none;
+    }
+    .navbar-menu {
+        border-top: 1px solid #d90023;
+    }
+    .navbar-menu .navbar-end a{
+        width: 100%;
+        justify-content: left;
+        height: 40px;
+        padding-left: 5px;
+    }
+}
+.mb1 {
+    margin-bottom:1rem !important;
+}
+
+.mb2 {
+    margin-bottom:2rem !important;
+}
+
+.mb3 {
+    margin-bottom:3rem !important;
+}
+.m1 {
+    margin: 1rem !important;
+}
+.mr1 {
+    margin-right: 1rem !important;
+}
+
+.mt1 {
+    margin-top:1rem !important;
+}
+.mt2 {
+    margin-top:2.5rem !important;
+}
+.mt3 {
+    margin-top:3rem !important;
+}
+.mt5 {
+    margin-top:5rem !important;
+}
+.pv0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
