@@ -25,6 +25,9 @@ ul {
 .is-blue {
     color: #0098db !important;
 }
+.has-background-red {
+    background-color: #d90023 !important;
+}
 .has-background-gray {
     background-color: #ebebeb;
 }
