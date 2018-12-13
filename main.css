@@ -11,18 +11,40 @@ img {
 ul {
     border-bottom: 0px !important;
 }
+::selection {
+    color: #ffffff;
+    background: #d90023;
+}
+
+.is-black {
+    color: #000000 !important;
+}
 .is-red {
     color: #d90023 !important;
 }
-.myBtn, .myBtn:hover {
-    color: #d90023 !important;
-    border-color: #d90023;
+.is-blue {
+    color: #0098db !important;
 }
 .has-background-gray {
     background-color: #ebebeb;
 }
+.has-background-lightgray {
+    background-color: #eaeaea;
+}
 .has-background-blue {
     background-color: #0098db;
+}
+
+
+
+.myBtn {
+    background-color: #d90023;
+    color: #fff !important;
+}
+.myBtn:hover {
+    color: #d90023 !important;
+    border-color: #d90023;
+    background-color: #fff;
 }
 .navbar {
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),
@@ -37,7 +59,7 @@ ul {
 }
 .navbar-item:hover {
     background-color: transparent;
-    border-bottom: 2px solid #d90023;
+    border-bottom: 3px solid #d90023;
 }
 .navbar-menu .navbar-end a{
     width: 100px;
@@ -45,7 +67,8 @@ ul {
 }
 .is-active {
     color: #d90023;
-    border-bottom: 2px solid #d90023;
+    transition: left .18s cubic-bezier(.35,0,.25,1),right .35s cubic-bezier(.35,0,.25,1);
+    border-bottom: 3px solid #d90023;
 }
 .navbarItem {
     margin: auto 5px;
@@ -60,10 +83,10 @@ ul {
     color: #d90023;
 }
 .features {
-    background-color: #fff;
-    color: black;
-    border-radius: 10px;
-    padding: 20px;
+    color: white;
+    padding: 5px 20px;
+}
+.input {
 }
 @media only screen and (max-width: 1086px) {
     .brand {

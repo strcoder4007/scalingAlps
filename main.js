@@ -22,4 +22,46 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
+    var animateHTML = function() {
+        console.log("started");
+        var elems;
+        var windowHeight;
+        function init() {
+            elems = document.querySelectorAll('#section');
+            windowHeight = window.innerHeight;
+            addEventHandlers();
+            checkPosition();
+        }
+        function addEventHandlers() {
+            window.addEventListener('scroll', checkPosition);
+            window.addEventListener('resize', init);
+        }
+        function checkPosition() {
+            for (var i = 0; i < elems.length; i++) {
+                var positionFromTop = elems[i].getBoundingClientRect().top;
+                if (positionFromTop - windowHeight < 0) {
+                    document.getElementById('navbar-home').classList.remove("is-active");
+                    document.getElementById('navbar-product').classList.remove("is-active");
+                    document.getElementById('navbar-contact').classList.remove("is-active");
+                    document.getElementById('navbar-about').classList.remove("is-active");
+                    if(i == 0) {
+                        document.getElementById('navbar-home').classList.add("is-active");
+                    } else if(i == 1) {
+                        document.getElementById('navbar-product').classList.add("is-active");
+                    } else if(i == 2) {
+                        document.getElementById('navbar-contact').classList.add("is-active");
+                    } else if(i == 3) {
+                        document.getElementById('navbar-about').classList.add("is-active");
+                    }
+                }
+            }
+        }
+        return {
+            init: init
+        };
+    };
+    animateHTML().init();
+
+
 });
