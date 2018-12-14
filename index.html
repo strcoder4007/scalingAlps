@@ -15,52 +15,51 @@
 </head>
 
 <body>
-    <div class="hero-head">
-        <nav class="navbar is-fixed-top">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbarItem" href="./index.html">
-                        <img src="images/red.png" alt="Logo">
-                    </a>
-                    <span class="is-danger brand">&nbsp;ALLPS</span>
-                    <span class="navbar-burger burger" data-target="navbarMenu">
+
+    <div id="home">
+        <div class="hero-head">
+            <nav class="navbar is-fixed-top">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbarItem" href="./index.html">
+                            <img src="images/red.png" alt="Logo">
+                        </a>
+                        <span class="brand">&nbsp;<a class="is-red" href="./index.html">ALLPS</a></span>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
                         <span></span>
                         <span></span>
                     </span>
-                </div>
-                <div id="navbarMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a id="navbar-home" class="navbar-item is-active" href="#home">Home</a>
-                        <a id="navbar-product" class="navbar-item" href="#product">Product</a>
-                        <a id="navbar-contact" class="navbar-item" href="#contact">Contact</a>
-                        <a id="navbar-about" class="navbar-item" href="#about">About us</a>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a id="navbar-home" class="navbar-item is-active" href="#home">Home</a>
+                            <a id="navbar-product" class="navbar-item" href="#product">Products</a>
+                            <a id="navbar-contact" class="navbar-item" href="#contact">Contact</a>
+                            <a id="navbar-about" class="navbar-item" href="#about">About us</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-    <div id="home">
+            </nav>
+        </div>
         <section id="section" class="hero is-fullheight is-default is-bold">
             <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="columns is-vcentered">
-                        <div class="column is-5">
-                            <figure class="image is-4by3">
-                                <img src="https://picsum.photos/800/600/?random" alt="Description">
-                            </figure>
-                        </div>
-                        <div class="column is-6 is-offset-1">
-                            <h1 class="subtitle is-1 is-size-2-mobile is-black">
+                <div class="container">
+                    <div class="columns is-vcentered mt3">
+                        <div class="column is-4 is-offset-8 has-text-centered">
+                            <h1 class="title is-1 is-size-3-mobile has-text-white has-background-red" style="opacity: .8">
                                 Welcome to ALLPS!
                             </h1>
-                            <h2 class="subtitle is-size-4-mobile is-3 is-black">
-                                We are a Swiss based startup<br>we make <span class="is-red is-uppercase"><b>IT</b></span> happen
+                        </div>
+                    </div>
+                    <div class="columns is-vcentered">
+                        <div class="column is-3 is-offset-9 has-text-right has-text-centered-touch">
+                            <h2 class="title is-size-4-mobile is-3 has-text-white">
+                                <p class="has-background-red" style="opacity: .8">We are a Zurich based startup company.</p>
                             </h2>
                             <br>
-                            <p class="has-text-centered">
-                                <a href="#product" class="button myBtn">
+                            <p class="">
+                                <a href="#product" class="button myBtn is-medium">
                                     See what we build
                                 </a>
                             </p>
@@ -72,21 +71,21 @@
     </div>
 
     <div id="product">
-        <section id="section" class="hero is-medium has-background-blue">
+        <section id="section" class="hero is-medium has-background-white">
             <div class="hero-body is-medium pv0 mt3 mb3">
-                <p class="has-text-centered title is-1 is-2-mobile has-text-white">Products</p>
+                <p class="has-text-centered title is-1 is-2-mobile has-text-dark">Products</p>
                 <div class="columns mt2">
                     <div class="column is-6 is-12-mobile has-text-centered is-hidden-desktop">
                         <img src="images/ipropal.png" alt="ipropal" style="height: 560px; width: auto;">
                     </div>
-                    <div class="column is-5 is-offset-1 mt3">
-                        <a href="https://ipropal.com" target="_blank"><p class="has-text-centered subtitle is-2 has-text-white">iPropal</p></a>
-                        <ul class="features">
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Hire verified IT freelancers online</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Pay only when satisfied with work.</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Manage work contracts and payments online.</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Cost effective and time saving way to execute IT projects.</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Post job free of cost and checkout smart matched freelancers instantly.</li>
+                    <div class="column is-5 is-offset-1 mt5">
+                        <a href="https://ipropal.com" target="_blank"><p class="has-text-left ml1 title is-2 has-text-blue">iPropal</p></a>
+                        <ul class="features has-text-dark">
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Hire verified IT freelancers online</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Pay only when satisfied with work.</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Manage work contracts and payments online.</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Cost effective and time saving way to execute IT projects.</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Post job free of cost and checkout smart matched freelancers instantly.</li>
                         </ul>
                     </div>
                     <div class="column is-6 is-12-mobile has-text-centered is-hidden-touch">
@@ -98,16 +97,68 @@
                     <div class="column is-5 has-text-centered">
                         <img src="images/ipropal_e.png" alt="ipropal" style="height: 560px; width: auto;">
                     </div>
-                    <div class="column is-6 is-offset-1 mt3">
+                    <div class="column is-6 is-onset-1 mt5">
                         <a href="https://ipropal.com/enterprise" target="_blank">
-                            <p class="has-text-centered subtitle is-2 has-text-white">iPropal Enterprise</p>
+                            <p class="has-text-right-desktop has-text-left mr3 title is-2 has-text-blue">iPropal Enterprise</p>
                         </a>
-                        <ul class="features">
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;iProPal Enterprise offers dedicated remote IT teams, to build high quality solutions faster at best price</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Let us know your requirements and we will find the right match for the project.</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Hire agile team to develop large, complex and critical projects from end-to-end.</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;MVP and full-cycle services for startups, etc.</li>
-                            <li class="mt2"><i class="fas fa-dot-circle"></i>&nbsp;Our team is experienced in technologies like Java, JavaScript, Python, Angular, ReactJS, VueJS, NodeJS, PHP, Laravel, Android, iOS,Docker, AWS, MongoDB, MySQL, Kubernetes etc.</li>
+                        <ul class="features has-text-dark is-hidden-desktop">
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;iProPal Enterprise offers dedicated remote IT teams, to build high quality<br> solutions faster at best price</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Let us know your requirements and we will find the right match for the project.</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Hire agile team to develop large, complex and critical projects from end-to-end.</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;MVP and full-cycle services for startups, etc.</li>
+                            <li class="mt2"><i class="fas fa-dot-circle has-text-blue"></i>&nbsp;Our team is experienced in technologies like Java, JavaScript, Python, Angular,<br> ReactJS, VueJS, NodeJS, PHP, Laravel, Android, iOS,Docker, AWS,<br> MongoDB, MySQL, Kubernetes etc.</li>
+                        </ul>
+                        <ul class="features has-text-dark has-text-right is-hidden-touch">
+                            <li class="mt2">
+                                <div class="columns">
+                                    <div class="column is-11 has-text-right p0">
+                                        iProPal Enterprise offers dedicated remote IT teams, to build high quality<br> solutions faster at best price
+                                    </div>
+                                    <div class="column is-1 has-text-left p0">
+                                        &nbsp;<i class="fas fa-dot-circle has-text-blue"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mt2">
+                                <div class="columns">
+                                    <div class="column is-11 has-text-right p0">
+                                        Let us know your requirements and we will find the right match for the project.
+                                    </div>
+                                    <div class="column is-1 has-text-left p0">
+                                        &nbsp;<i class="fas fa-dot-circle has-text-blue"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mt2">
+                                <div class="columns">
+                                    <div class="column is-11 has-text-right p0">
+                                        Hire agile team to develop large, complex and critical projects from end-to-end.
+                                    </div>
+                                    <div class="column is-1 has-text-left p0">
+                                        &nbsp;<i class="fas fa-dot-circle has-text-blue"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mt2">
+                                <div class="columns">
+                                    <div class="column is-11 has-text-right p0">
+                                        MVP and full-cycle services for startups, etc.
+                                    </div>
+                                    <div class="column is-1 has-text-left p0">
+                                        &nbsp;<i class="fas fa-dot-circle has-text-blue"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mt2">
+                                <div class="columns">
+                                    <div class="column is-11 has-text-right p0">
+                                        Our team is experienced in technologies like Java, JavaScript, Python, Angular,<br> ReactJS, VueJS, NodeJS, PHP, Laravel, Android, iOS,Docker, AWS,<br> MongoDB, MySQL, Kubernetes etc.
+                                    </div>
+                                    <div class="column is-1 has-text-left p0">
+                                        &nbsp;<i class="fas fa-dot-circle has-text-blue"></i>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -190,7 +241,7 @@
             <div class="hero-foot mb2">
                 <div class="container">
                     <div class="columns has-text-left has-text-centered-mobile has-text-dark is-multiline">
-                        <div class="column is-5 mt3 mb1">
+                        <div class="column is-4 mt3 mb1">
                             <a class="navbarItem" href="./index.html">
                                 <img src="images/red.png" alt="Logo">
                             </a>
@@ -202,18 +253,20 @@
                                 create new opportunities for our users across the world.
                             </p>
                         </div>
-                        <div class="column is-3 mt3">
-                            <p class="mb1 has-text-dark title is-5">Contact Us</p>
-                            <p class="mb1"><span class="has-text-dark subtitle is-6"><i class="fas fa-phone"></i>&nbsp;+41 (0) 766812378</span></p>
-                            <p class="has-text-dark subtitle is-6"><i class="fas fa-envelope"></i>&nbsp;<a class="has-text-dark" href="mailto:support@propal.ch">support@propal.ch</a></p>
+                        <div class="column is-2 is-offset-1 mt3">
+                            <p class="mb2 has-text-dark title is-5">Contact Us</p>
+                            <p class="mb1"><span class="has-text-dark subtitle is-6"><i class="fas fa-phone"></i>&nbsp;&nbsp;+41 (0) 766812378</span></p>
+                            <p class="has-text-dark subtitle is-6"><i class="fas fa-envelope"></i>&nbsp;&nbsp;<a class="has-text-dark" href="mailto:support@propal.ch">support@propal.ch</a></p>
                         </div>
-                        <div class="column is-4 has-text-right has-text-centered-mobile mt3">
-                            <p class="mr1 has-text-dark title is-5">Network Partner</p>
+                        <div class="column is-4 is-offset-1 has-text-left has-text-centered-mobile mt3">
+                            <p class="has-text-dark title is-5">Network Partner</p>
                             <img src="/images/swissnex.png" style="height: 80px; width: auto">
                         </div>
                     </div>
                     <hr>
-                    <p class="mb1"><a class="has-text-dark subtitle is-6" href="./privacy.html">Privacy Policy</a></p>
+                    <p class="mb1 has-text-centered-touch">
+                        <a class="has-text-dark subtitle is-6" href="./privacy.html">Privacy Policy</a>
+                    </p>
                 </div>
             </div>
         </section>
