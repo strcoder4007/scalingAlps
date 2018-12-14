@@ -136,8 +136,13 @@ hr {
     .brand {
         margin: 0px;
     }
+    .navbar-menu,
+    .navbar-link.is-active,
+    .navbar-link:hover,
+    a.navbar-item.is-active,
+    a.navbar-item:hover,
     .is-active {
-        border-bottom: none;
+        border-bottom: 0px !important;
     }
     .navbar-menu {
         border-top: 1px solid #e20029 !important;
