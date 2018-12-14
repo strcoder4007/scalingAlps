@@ -13,23 +13,26 @@ ul {
 }
 ::selection {
     color: #ffffff;
-    background: #d90023;
+    background: #e20029 !important;
 }
 
 .is-black {
     color: #000000 !important;
 }
 .is-red {
-    color: #d90023 !important;
+    color: #e20029 !important;
 }
 .is-blue {
     color: #0098db !important;
 }
+.has-text-gray {
+    color: gray;
+}
 .has-background-red {
-    background-color: #d90023 !important;
+    background-color: #e20029 !important;
 }
 .has-background-gray {
-    background-color: #ebebeb;
+    background-color: gray;
 }
 .has-background-lightgray {
     background-color: #eaeaea;
@@ -40,21 +43,28 @@ ul {
 
 
 
+
 .myBtn {
-    background-color: #d90023;
+    background-color: #e20029 !important;
     color: #fff !important;
 }
 .myBtn:hover {
-    color: #d90023 !important;
-    border-color: #d90023;
+    color: #fff !important;
+    border-color: #e20029 !important;
     background-color: #fff;
+}
+.navbar-link.is-active,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:hover {
+    color: #e20029 !important;
 }
 .navbar {
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),
     inset 0 -1px 0 0 #dadce0;
 }
 .burger span{
-    border: 1px solid #d90023;
+    border: 1px solid #e20029 !important;
 }
 .navbar-item {
     padding: 0px;
@@ -62,16 +72,16 @@ ul {
 }
 .navbar-item:hover {
     background-color: transparent;
-    border-bottom: 3px solid #d90023;
+    border-bottom: 3px solid #e20029 !important;
 }
 .navbar-menu .navbar-end a{
     width: 100px;
     justify-content: center;
 }
 .is-active {
-    color: #d90023;
+    color: #e20029 !important;
     transition: left .18s cubic-bezier(.35,0,.25,1),right .35s cubic-bezier(.35,0,.25,1);
-    border-bottom: 3px solid #d90023;
+    border-bottom: 3px solid #e20029 !important;
 }
 .navbarItem {
     margin: auto 5px;
@@ -83,14 +93,33 @@ ul {
     margin: auto;
     font-weight: 600;
     font-size: 35px;
-    color: #d90023;
+    color: #e20029 !important;
 }
 .features {
     color: white;
     padding: 5px 20px;
 }
-.input {
+.h500 {
+    height: 500px !important;
 }
+.is-180x180 {
+    height: 180px !important;
+    width: 180px !important;
+}
+.image {
+    margin: auto;
+}
+hr {
+    height: 1px;
+    background-color: gray;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 1086px) {
     .brand {
         margin: 0px;
@@ -99,7 +128,7 @@ ul {
         border-bottom: none;
     }
     .navbar-menu {
-        border-top: 1px solid #d90023;
+        border-top: 1px solid #e20029 !important;
     }
     .navbar-menu .navbar-end a{
         width: 100%;
@@ -107,6 +136,9 @@ ul {
         height: 40px;
         padding-left: 5px;
     }
+}
+.mb0 {
+    margin-bottom:0px !important;
 }
 .mb1 {
     margin-bottom:1rem !important;
@@ -124,6 +156,12 @@ ul {
 }
 .mr1 {
     margin-right: 1rem !important;
+}
+.ml1 {
+    margin-left: 1rem !important;
+}
+.ml2 {
+    margin-left: 2rem !important;
 }
 
 .mt1 {
