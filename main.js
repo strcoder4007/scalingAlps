@@ -1,3 +1,15 @@
+function initMap() {
+    console.log("rendering map...");
+    var uluru =  {lat: 47.362046, lng: 8.55180984};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 16, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    console.log("map rendered.");
+}
+window.onload=initMap();
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
 
     // Get all "navbar-burger" elements
