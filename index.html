@@ -60,7 +60,7 @@
                                 large and complex IT projects, hire in-house ipropal team through iProPal
                                 enterprise .
                             </p>
-                            <button class="button myBtn mt1">Explore more</button>
+                            <a class="button myBtn mt1" href="#product">Explore more</a>
                         </div>
                     </div>
                 </div>
@@ -178,14 +178,14 @@
                                 <input type="text" name="subject" class="input mt2" placeholder="Subject" required>
                                 <textarea class="textarea mt2" name="message" placeholder="Message" required></textarea>
                                 <input type="hidden" name="form_submitted" value="1"/>
-                                <p><input type="submit" value="Submit" name="submit"/></p>
+                                <br>
+                                <input class="button myBtn" type="submit" value="Submit" name="submit"/>
                             </form>
                         </div>
                         <div class="column is-6 is-offset-1 is-12-mobile">
                             <p class="has-text-left subtitle has-text-dark">Corporate Address</p>
                             <p class="mb1">ALLPS GmbH <br>c/o Findea AG<br>Wiesenstrasse 8<br>8008 zurich</p>
-                            <div id="map"></div>
-                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZIUQ04tEDnVFGaG5GzLp57SEhcdvIZDQ&callback=initMap"></script>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10810.226627703312!2d8.55192!3d47.362053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa74df29e9ed9%3A0xcbc40aba4476373f!2sWiesenstrasse+8%2C+8008+Z%C3%BCrich%2C+Switzerland!5e0!3m2!1sen!2sus!4v1508323029900" height="400" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -207,7 +207,7 @@
                             <p class="title is-6 has-text-dark">Founder</p>
                             <p class="has-text-dark subtitle is-6">IT experience of 17 years in Banking,Internet and Mobile domains.</p>
                         </div>
-                        <div class="column is-2-desktop is-offset-1 is-6-tablet is-12-mobile h300 has-text-centered">
+                        <div class="column is-2-desktop is-offset-1-desktop is-6-tablet is-12-mobile h300 has-text-centered">
                             <figure class="image is-180x180 is-centered">
                                 <img class="is-rounded" src="./images/feroz.jpg">
                             </figure>
@@ -215,7 +215,7 @@
                             <p class="title is-6 has-text-dark">COO</p>
                             <p class="has-text-dark subtitle is-6">IT experience of 10 years in IOT based solutions.</p>
                         </div>
-                        <div class="column is-2-desktop is-offset-1 is-6-tablet is-12-mobile h300 has-text-centered">
+                        <div class="column is-2-desktop is-offset-1-desktop is-6-tablet is-12-mobile h300 has-text-centered">
                             <figure class="image is-180x180 is-centered">
                                 <img class="is-rounded" src="./images/markus.jpg">
                             </figure>
@@ -223,7 +223,7 @@
                             <p class="title is-6 has-text-dark">Advisor/Investor</p>
                             <p class="has-text-dark subtitle is-6">Buisiness experience of 20 years in Banking Domain.</p>
                         </div>
-                        <div class="column is-2-desktop is-offset-1 is-6-tablet is-12-mobile h300 has-text-centered">
+                        <div class="column is-2-desktop is-offset-1-desktop is-6-tablet is-12-mobile h300 has-text-centered">
                             <figure class="image is-180x180 is-centered">
                                 <img class="is-rounded" src="./images/javed.jpg">
                             </figure>
@@ -262,7 +262,7 @@
                         </div>
                         <div class="column is-3 is-offset-1 has-text-left has-text-centered-mobile mt3">
                             <p class="has-text-dark title is-5">Network Partner</p>
-                            <img src="/images/swissnex.png" style="height: 70px; width: auto">
+                            <a href="https://www.swissnexindia.org/" target="_blank"><img src="/images/swissnex.png" style="height: 70px; width: auto"></a>
                         </div>
                     </div>
                     <hr>
@@ -274,58 +274,6 @@
             </div>
         </section>
     </div>
-    <script>
-
-        function validation()
-        {
-            var contactname=document.contactform.name.value;
-            var name_exp=/^[A-Za-z\s]+$/;
-            if(contactname=='')
-            {
-                alert("Name Field Should Not Be Empty!");
-                document.contactform.name.focus();
-                return false;
-            }
-            else if(!contactname.match(name_exp))
-            {
-                alert("Invalid Name field!");
-                document.contactform.name.focus();
-                return false;
-            }
-
-            var emails=document.contactform.email.value;
-            //var email_exp=/^[A-Za-z0-9\.-_\$]+@[A-Za-z]+\.[a-z]{2,4}$/;
-            var emails_exp=/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-            if(emails=='')
-            {
-                alert("Please Enter Email-Id!");
-                document.contactform.email.focus();
-                return false;
-            }
-            else if(!emails.match(emails_exp))
-            {
-                alert("Invalid Email ID !");
-                document.contactform.email.focus();
-                return false;
-            }
-            var subjects = document.contactform.subject.value;
-            if(subjects=='')
-            {
-                alert("Subject field is empty!")
-                document.contactform.subject.focus();
-                return false;
-            }
-            var messages=document.contactform.message.value;
-            if(messages=='')
-            {
-                alert("Message field is empty!");
-                document.contactform.message.focus();
-                return false;
-            }
-            return true;
-        }
-
-    </script>
     <script src="main.js"></script>
 
 </body>

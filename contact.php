@@ -8,11 +8,11 @@ $mail = new PHPMailer(true);
 try {
     $mail->SMTPDebug = 0;
     $mail->isSMTP();
-    $mail->Host = 'smtp.mailtrap.io';
+    $mail->Host = 'smtp.mailgun.org';
     $mail->SMTPAuth = true;
-    $mail->Username = '6b4f78833bcbc8';
-    $mail->Password = '1cc8db9a021a02';
-    $mail->Port = 465;
+    $mail->Username = 'postmaster@mails.ipropal.com';
+    $mail->Password = '30c4f36d58d76183073e768cc678c2a0';
+    $mail->Port = 587;
 
     $mail->setFrom($_POST['email'], $_POST['name']);
     $mail->addAddress('support@ipropal.com');
