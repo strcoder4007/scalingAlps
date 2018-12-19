@@ -172,11 +172,14 @@
                     <div class="columns mt2">
                         <div class="column is-5 is-12-mobile">
                             <p>Thank you for your interest in ALLPS. Please provide the following information about your business requirements.</p>
-                            <input type="text" class="input mt2" placeholder="Name">
-                            <input type="email" class="input mt2" placeholder="Email">
-                            <input type="text" class="input mt2" placeholder="Subject">
-                            <textarea class="textarea mt2" placeholder="Message"></textarea>
-                            <button class="button myBtn mt2">Submit</button>
+                            <form action="contact.php" method="post">
+                                <input type="text" name="name" class="input mt2" placeholder="Name" required>
+                                <input type="email" name="email" class="input mt2" placeholder="Email" required>
+                                <input type="text" name="subject" class="input mt2" placeholder="Subject" required>
+                                <textarea class="textarea mt2" name="message" placeholder="Message" required></textarea>
+                                <input type="hidden" name="form_submitted" value="1"/>
+                                <p><input type="submit" value="Submit" name="submit"/></p>
+                            </form>
                         </div>
                         <div class="column is-6 is-offset-1 is-12-mobile">
                             <p class="has-text-left subtitle has-text-dark">Corporate Address</p>
