@@ -11,10 +11,6 @@ img {
 ul {
     border-bottom: 0px !important;
 }
-::selection {
-    color: #ffffff;
-    background: #e20029 !important;
-}
 #map {
     height: 400px;
     width: 100%;
@@ -105,7 +101,6 @@ a.navbar-item:hover {
 }
 .brand {
     margin: auto;
-    font-weight: 600;
     font-size: 35px;
     color: #e20029 !important;
 }
